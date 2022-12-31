@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cian's Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo"><i class="fas fa-file-code"></i>Cian Kelly</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/tech.html" class="navbar__links">Tech</a>
+          </li>
+          <li class="navbar__btn"><a href="/contact.html" class="button">Contact me</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="main">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>NEXT GENERATION</h1>
+          <h2>PROGRAMMING</h2>
+          <p>See what makes me different.</p>
+          <button class="main__btn"><a href="/resume.html">Resume</a></button>
+        </div>
+        <div class="main__img--container">
+          <img id="main__img" src="images/intro.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="services">
+      <h1>Check out some of my projects</h1>
+      <div class="services__container">
+        <div class="services__card">
+          <h2>Command Prompt</h2>
+          <p>Program for a shell in UNIX</p>
+          <button onclick="window.location.href='https://github.com/cian-kelly/unix-shell';">Get Started</button>
+        </div>
+        <div class="services__card">
+          <h2>Online Quiz</h2>
+          <p>Online quiz application using TCP sockets</p>
+          <button onclick="window.location.href='https://github.com/cian-kelly/online-quiz'">Get Started</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>About Me</h2>
+            <a href="/resume.html">Resume</a> <a href="/"></a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Contact Me</h2>
+            <a href="/contact.html">Contact Page</a>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+        </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo"><i class="fas fa-file-code"></i> Cian Kelly</a>
+          </div>
+          <p class="website__rights">© CK Productions 2022. All rights reserved</p>
+          <div class="social__icons">
+            <button onclick="window.location.href='https://github.com/cian-kelly';" class="social__btn"><a
+              class="social__icon--link"
+              href="#"
+              target="_blank"
+              aria-label="Github"
+            >
+              <i class="fab fa-github"></i>
+            </a></button>
+            <!-- <button onclick="window.location.href='https://github.com/cian-kelly';" class="social__btn"><a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="Twitter"
+            >
+              <i class="fab fa-twitter"></i>
+            </a></button> -->
+            <button onclick="window.location.href='https://www.linkedin.com/in/cian-kelly-793435260/';" class="social__btn"><a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a></button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
